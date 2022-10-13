@@ -6,6 +6,9 @@ function game() {
         playRound(i); 
     }
     logWins(); //call function logWins
+    if (i = 4) {
+        whoWon();
+    }
 }
 
 function playRound(round){
@@ -15,6 +18,7 @@ function playRound(round){
     // choiceP will equal playerSelection and choiceC will equal computerSelection.
     winners.push(winner); //when winner is determined add result to array of winners *SEE LINE 2*
     logRound(playerSelection,computerSelection,winner,round) //pass the variables down to logRound function
+    whoWon(playerWins, Ties);
 }
 playRound()
 
@@ -24,7 +28,7 @@ playRound()
 
 
 
-function playerChoice(playerSelection) {
+function playerChoice() {
     let input = prompt('Type Rock, Paper, Scissors'); //prompt user to enter rock, paper, or scissors
 
     if (input == null) { 
@@ -110,6 +114,19 @@ function logRound(playerChoice, computerChoice, winner, round){
     console.log('Computer chose:', computerChoice);
     console.log(winner, 'Won the Round');
     console.log('--------------------------------------');
+}
+
+function whoWon(ties, playerWins){
+    if (ties >= 3) {
+    console.log ('its a Tie!');
+    }
+    else if (playerWins <= 3) {
+    console.log ('Computer Won!');
+    }
+    else if (playerWins >= 3) {
+    console.log ('Player Won!')
+    }
+
 }
 
 game(); //call function game and play the game.
