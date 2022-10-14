@@ -8,29 +8,62 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Header</header>
+    <header>
+        <div></div>
+        <h1 class="heading1">Rock paper Scissors</h1>
+        <h2 class="heading2"> Make your Selection! </h2>
+        </div>
+    </header>
     <div id="main">
         <article>
-            <div class="contentCont1">
-                <h1 class="heading1">Rock paper Scissors</h1>
+            <div class="scoreContainer">
+                <div class ='scoreBox'>
+                    <h1 class="heading1">ROUND: </h1>
+                </div>
             </div>
-            <div class="contentCont2">
+            <div class = 'rpcContainer'>
                 <button id="buttonRock">
                 <div id="rock"><img class='picSizer' src='images/rock.png'></div>
                 </button>
-                <button>
+                <button id="buttonPaper">
                 <div id="paper"><img class='picSizer' src='images/paper.png'></div>
                 </button>
-                <button>
+                <button id="buttonScissors">
                 <div id="scissors"><img class='picSizer'  src='images/scissors.jpg'></div>
                 </button>
             </div>
         </article>
-        <nav></nav>
-        <aside></aside>
+        <nav>
+            <h1 class="sideH1">Computer Choice</h1>
+            <div class = 'choiceBox'>
+                <p>test</p>
+            </div>
+        </nav>
+        <aside>
+            <h1 class="sideH1">Player Choice</h1>
+            <div class = 'choiceBox'>
+                <p>test</p>
+            </div>
+        </aside>
     </div>
-    <footer></footer> 
+    <footer>
+        <div class="scoreBoardContainer">
+            <div class="scores">
+                <div class="playerScoreBox" id = 'pScoreBox'>
+                    <p>test</p>
+                </div>
+                <div class="computerScoreBox" id = 'cScoreBox'>
+                    <p>test</p>
+                </div>
+            </div>
+            <div class="winnerContainer">
+                <div class= 'displayWinner' id="displayWinner">
+
+                </div>
+            </div>
+        </div>
+    </footer> 
     
 </body>
-<script src="java.js"></script>
+<script src="javatest.js"></script>
 </html>

@@ -2,7 +2,7 @@ const choices = ['rock' , 'paper', 'scissors'];
 const winners= [];
 
 function game() {
-    for (let i =1; i <=4; i++) { //round is i, start at round 1, go up until round 5, increase round by 1 until round is less than or equal to 5
+    for (let i =1; i <=5; i++) { //round is i, start at round 1, go up until round 5, increase round by 1 until round is less than or equal to 5
         playRound(i); 
     }
     logWins(); //call function logWins
@@ -19,46 +19,14 @@ function playRound(round){
 playRound()
 
 
-
-
-
-
-
-function playerChoice(playerSelection) {
-    function selected(playerSelection) { document.getElementById(rock, addEventListener(click, selected(playerSelection))) ||
-    document.getElementById(paper, addEventListener(click, selected(playerSelection))) || 
-    document.getElementById(rock, addEventListener(click, selected(playerSelection)));
-    }
-    let selection = selected(playerSelection)
-    console.log(playerSelection);
-}  
-    
-    //let input = prompt('Type Rock, Paper, Scissors'); //prompt user to enter rock, paper, or scissors
-
-    //if (input == null) { 
-  //      input = prompt('Type Rock, Paper, or Scissors');
-   // } // if the user clicks cancel aka input being the same as null reprompt for a input.
-
-   // input = input.toLowerCase(); //change input to lowercase before checking to see if input is same desiered answers in array
-
-   // let checkedInput = validateInput(input); //input will become choice in function if true, continue, if false reprompt with futher instructions.
-
-   // while (checkedInput == false) {
-  //      input = prompt(
-   //         'type Rock, Paper, or Scissors. Spelling needs to be exact, capitlization doesnt matter'
-    //    );
-   //     while (input == null) {
-  //          input = prompt('Type Rock, Paper, or Scissors');
-  //  }
-  //  input = input.toLowerCase(); //make sure that input is not cap sensitive for last time
-   // checkedInput = validateInput(input); // break that loop
-  //  } // closes out the while seen above on line 24
-   // return input; //return the players input
-//}
-
-
-
-
+function playerChoice() {
+    const rock = document.getElementById('buttonRock');
+    const paper = document.getElementById('buttonPaper');
+    const scissors = document.getElementById('buttonScissors');
+    rock.addEventListener('click', () => playerChoice('rock'))
+    paper.addEventListener('click', () => playerChoice('paper'))
+    scissors.addEventListener('click', ()=> playerChoice('scissors'))
+}
 
 
 
