@@ -64,6 +64,8 @@ function getRandomChoice() {
     updateChoices(computerSelection);
 }
 const computerSelection = getRandomChoice();
+
+
 function handleClick(playerSelection){
     switch (playerSelection) {
         case 'ROCK':
@@ -76,19 +78,10 @@ function handleClick(playerSelection){
         playerChoiceDisplay.textContent = '✌'
         break
     }
-    switch (computerSelection) {
-        case 'ROCK':
-        computerChoiceDisplay.textContent = '✊'
-        break
-        case 'PAPER':
-        computerChoiceDisplay.textContent = '✋'
-        break
-        case 'SCISSORS':
-        computerChoiceDisplay.textContent = '✌'
-        break
-    }
-
+    const computerSelection = getRandomChoice();
+    updateChoices(computerSelection)
     playRound(playerSelection, computerSelection);
+    
 }
 
 function updateChoices(computerSelection) {
@@ -104,8 +97,6 @@ function updateChoices(computerSelection) {
         break
     }
 }
-console.log(computerSelection);
-updateChoices();
 
 function updateScore() {
     if (roundWinner === 'tie') {
