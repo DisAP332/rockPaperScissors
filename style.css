@@ -23,7 +23,8 @@
   #main > nav, 
   #main > aside {
     flex: 0 0 20vw;
-    background: beige;
+    background: black;
+    color: white;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -82,6 +83,14 @@
     width:180px;
     height:180px;
 }
+.rpcChoiceBox {
+  width:200px;
+  height:200px;
+  text-align:center;
+  font-size: 170px;
+  background-color:black;
+  color:white;
+}
 .rpcContainer {
     width: 100%;
     height: 20%;
@@ -102,15 +111,11 @@
 .sideH1{
   font-size: 30px;
 }
-.select {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-}
 .choiceBox {
-  background:blue;
   width:180px;
   height:180px;
+  text-align:center;
+  font-size: 170px;
 }
 .scoreContainer {
   display: flex;
