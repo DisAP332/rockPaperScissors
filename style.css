@@ -121,19 +121,21 @@
 }
 .playerScoreBox {
   background: green;
-  width: 20% px;
+  width: 15%;
   height: 100 px;
 }
 .computerScoreBox {
   background: green;
-  width: 300 px;
+  width: 15%;
   height: 100 px;
 }
 .score {
   display: flex;
   flex-direction:row;
-  height:40%;
-  background: green;
+  height:40%; 
+  width: 80%;
+  justify-content: space-evenly;
+  background: yellow;
 }
 
 .winnerContainer {
@@ -143,5 +145,5 @@
 .displayWinner {
   width:300px;
   height:100px;
-  color:green;
+  background-color:green;
 }
